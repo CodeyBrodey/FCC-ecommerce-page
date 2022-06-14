@@ -228,7 +228,7 @@ nav li{
     object-fit: cover;
     object-position: 50% 0%;
     border-block: var(--accent-clr) solid 3px;
-    filter: grayscale(0.2) contrast(1.1) brightness(0.8);
+    filter: grayscale(0.3) contrast(1.1) brightness(0.8);
 }
 
 
@@ -405,15 +405,13 @@ footer a{
     .cta button{
         margin: 1em auto 0 auto;
     }
-    
-    footer{
-        min-height: 8em;
-    }
 
     footer div{
         display: flex;
         justify-content: space-between;
+        align-content: center;
         gap: 5em;
+        padding: 2em 0;
     }
 
     footer ul{
@@ -421,8 +419,8 @@ footer a{
         text-align: right;
     }
 
-    .footer-container{
-        align-items: center;
+    .footer-items{
+        align-self: center;
     }
 
     .footer-items:nth-child(2){
