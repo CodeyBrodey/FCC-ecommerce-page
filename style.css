@@ -103,6 +103,14 @@ header a{
     color: var(--black-text-clr);
 }
 
+.hero button{
+    color: var(--black-text-clr);
+}
+
+.hero button:hover{
+    
+}
+
 
 /* hero */
 
