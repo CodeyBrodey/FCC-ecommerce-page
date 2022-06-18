@@ -48,7 +48,7 @@ h1,h2,h3,h4,button,li{
 
 button{
     background-color: var(--accent-clr);
-    border: none;
+    border: transparent 2px solid;
     padding: 0.5em 1em;
     margin: 1em 0;
     font-size: 1.5rem;
@@ -58,6 +58,10 @@ button{
 a{
     text-decoration: none;
     color: var(--neutral-text-clr);    
+}
+
+a:hover{
+    opacity: 0.4;
 }
 
 
@@ -105,10 +109,16 @@ header a{
 
 .hero button{
     color: var(--black-text-clr);
+    outline: transparent solid 2px;
+    transition: 350ms ease;
 }
 
 .hero button:hover{
-    
+    background-color: transparent;
+    color: var(--white-text-clr);
+    outline: var(--accent-clr) solid 2px;
+    outline-offset: -8px; 
+    transition: 350ms ease;
 }
 
 
@@ -298,9 +308,30 @@ h2 .accent{
     color: var(--white-text-clr);
 }
 
+.cta .catalog-btn{
+    transition: 350ms ease;
+}
+
+.cta .catalog-btn:hover{
+    transition: 350ms ease;
+    background-color: var(--white-clr);
+    color: var(--accent-clr);
+    outline: var(--accent-clr) 2px solid;
+    outline-offset: -8px;
+}
+
 .cta .workshop-btn{
     background-color: var(--white-clr);
     color: var(--accent-text-clr);
+    transition: 350ms ease;
+}
+
+.cta .workshop-btn:hover{
+    background-color: var(--accent-clr);
+    color: var(--white-clr);
+    outline: var(--white-clr) 2px solid;
+    outline-offset: -8px;
+    transition: 350ms ease;
 }
 
 .cta-span{
