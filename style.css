@@ -706,19 +706,11 @@ footer li{
         margin: 1em 0 0 -5em;
         opacity: 0;
     }
-
-    100%{
-        margin: 1em 0 0 0;
-    }
 }
 
 @keyframes btn-animation{
     0%{
         margin: 1em 0 0 -7em;
         opacity: 0;
-    }
-
-    100%{
-        margin: 1em 0;
     }
 }
