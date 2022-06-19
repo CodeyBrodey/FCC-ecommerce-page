@@ -124,6 +124,10 @@ header a{
     width: 100%;
 }
 
+.hero-img2, .hero-img3{
+    display: none;
+}
+
 .hero h1{
     font-size: 3.5rem;
     line-height: 0.95;
@@ -528,6 +532,15 @@ footer li{
         object-position: 100% 100%;
     }
 
+    .hero-img2{
+        display: block;
+        z-index: -10;
+    }
+
+    .hero-img1, .hero-img3{
+        display: none;
+    }
+
     .hero p{
         margin: 1rem 0 0 0;
         width: 40%;
@@ -608,6 +621,15 @@ footer li{
 @media (min-width:1800px){
     nav li{
         font-size: 1.75rem;
+    }
+
+    .hero-img3{
+        display: block;
+        z-index: -10;
+    }
+
+    .hero-img1, .hero-img2{
+        display: none;
     }
 
     .hero h1{
