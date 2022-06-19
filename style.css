@@ -130,6 +130,7 @@ header a{
     letter-spacing: 0.15ch;
     color: var(--white-text-clr);
     margin: 1em 0 0 0;
+    animation: h1-animation 400ms;
 }
 
 .clr-text{
@@ -147,12 +148,14 @@ header a{
     color: var(--neutral-text-clr);
     margin: 1em 0 0 0;
     width: 65%;
+    animation: p-animation 500ms;
 }
 
 .hero button{
     color: var(--black-text-clr);
     outline: transparent solid 2px;
     transition: 350ms ease;
+    animation: btn-animation 600ms;
 }
 
 .hero button:hover, .hero button:focus{
@@ -661,5 +664,39 @@ footer li{
 
     footer li{
         font-size: 1.75rem;
+    }
+}
+
+
+@keyframes h1-animation{
+    0%{
+        margin: 1em 0 0 -1em;
+        opacity: 0;
+    }
+
+    100%{
+        margin: 1em 0 0 0;
+    }
+}
+
+@keyframes p-animation{
+    0%{
+        margin: 1em 0 0 -5em;
+        opacity: 0;
+    }
+
+    100%{
+        margin: 1em 0 0 0;
+    }
+}
+
+@keyframes btn-animation{
+    0%{
+        margin: 1em 0 0 -7em;
+        opacity: 0;
+    }
+
+    100%{
+        margin: 0 0 0 0;
     }
 }
