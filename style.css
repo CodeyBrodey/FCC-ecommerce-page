@@ -60,7 +60,7 @@ a{
     color: var(--neutral-text-clr);    
 }
 
-a:hover{
+a:hover, a:focus{
     opacity: 0.6;
 }
 
@@ -107,19 +107,6 @@ header a{
     color: var(--black-text-clr);
 }
 
-.hero button{
-    color: var(--black-text-clr);
-    outline: transparent solid 2px;
-    transition: 350ms ease;
-}
-
-.hero button:hover{
-    background-color: transparent;
-    color: var(--white-text-clr);
-    outline: var(--accent-clr) solid 2px;
-    outline-offset: -8px; 
-    transition: 350ms ease;
-}
 
 
 /* hero */
@@ -160,6 +147,20 @@ header a{
     color: var(--neutral-text-clr);
     margin: 1em 0 0 0;
     width: 65%;
+}
+
+.hero button{
+    color: var(--black-text-clr);
+    outline: transparent solid 2px;
+    transition: 350ms ease;
+}
+
+.hero button:hover, .hero button:focus{
+    background-color: transparent;
+    color: var(--white-text-clr);
+    outline: var(--accent-clr) solid 2px;
+    outline-offset: -8px; 
+    transition: 350ms ease;
 }
 
 
@@ -312,7 +313,7 @@ h2 .accent{
     transition: 350ms ease;
 }
 
-.cta .catalog-btn:hover{
+.cta .catalog-btn:hover, .cta .catalog-btn:focus{
     transition: 350ms ease;
     background-color: var(--white-clr);
     color: var(--accent-clr);
@@ -326,7 +327,7 @@ h2 .accent{
     transition: 350ms ease;
 }
 
-.cta .workshop-btn:hover{
+.cta .workshop-btn:hover, .cta .workshop-btn:focus{
     background-color: var(--accent-clr);
     color: var(--white-clr);
     outline: var(--white-clr) 2px solid;
